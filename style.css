@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    background: black;
+    
+    height: 80%;
+    width: 100%;
+    display: flex;
+    background: drop-shadow( #000000 10%, #313030 10%, #ebcb25 10%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+label.logo {
+    color: #EBCB25; 
+    font-size: 36px;
+    line-height: 62px;
+    justify-content: space-between;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #EBCB25;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation-iteration-count: initial ;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color:white;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.corpo {
+    
+    position: absolute;
+    width: 992px;
+    height: 203px;
+    left: 240px;
+    top: 317px;
+    
+    font-family: 'Montserrat';
+   
+   
+    font-size: 175%;
+    line-height: 59px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 56px;
+    
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 646px;
+    top: 600px;
+    
+    background: #1D2951;
+    border-radius: 20px;
+    color: white;
+}
+.marca{
+    position: absolute;
+    width: 278px;
+    height: 336px;
+    left: 1136px;
+    top: 668px;
+    
+   
+}
+
+
